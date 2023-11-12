@@ -1,14 +1,27 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 class BookScreen extends React.Component {
   render() {
     return (
-      <View>
-        <Text>Book Screen</Text>
+      <View style={styles.container}>
+        <Text style={styles.text}>Book Screen</Text>
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#e74c3c',
+  },
+  text: {
+    fontSize: 20,
+    color: '#ffffff',
+  },
+});
 
 export default BookScreen;
